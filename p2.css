@@ -1,0 +1,147 @@
+body{
+    font-family: 'Square Peg', cursive;
+    background-color: #f8ceec;
+background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+ 
+  
+
+    
+}
+
+.top{
+    background-color: rgb(0, 0, 0,0);
+  text-align: center;
+   font-size:30px;
+  color:white;
+
+  font-family: 'Square Peg', cursive;
+}
+
+.top h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #a66ee6; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 6s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+      animation-iteration-count: infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #a66ee6; }
+  }
+
+  
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Square Peg', cursive;
+    font-size: medium;
+   
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    line-height: 0;
+  
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.5s;
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover {
+    flex: 1 1 50%;
+  }
+  
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .buttons{
+    background-color: rgb(0, 0, 0);
+ 
+  background-size: 200px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(247, 31, 218);
+  border: 2px solid #a66ee6;
+  border-width: 5px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #77c8a8;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+
+/*heart*/
