@@ -1,13 +1,13 @@
+/*body styling*/
 body{
     font-family: 'Square Peg', cursive;
     background-color: #f8ceec;
 background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
- 
-  
-
     
 }
 
+
+/*letters styling*/
 .top{
     background-color: rgb(0, 0, 0,0);
   text-align: center;
@@ -17,6 +17,7 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   font-family: 'Square Peg', cursive;
 }
 
+/*same text animation as home page*/
 .top h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid #a66ee6; /* The typwriter cursor */
@@ -43,6 +44,10 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   }
 
   
+
+  /*div expand animation */
+
+  /*styling of the div that holds all the images of the letters*/
 .container {
     display: flex;
     width: 100%;
@@ -54,6 +59,7 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
    
   }
   
+  /*styling of the div that holds each individual image of letter*/
   .box {
     flex: 1;
     overflow: hidden;
@@ -64,6 +70,8 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   
   }
   
+  /*styling of image inside box, before hover*/
+  /* > targets elements which are direct children of a particular element*/
   .box > img {
     width: 200%;
     height: calc(100% - 10vh);
@@ -72,6 +80,7 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     transition: 0.5s;
   }
   
+  /*styling of "labels" under box, before hover*/
   .box > span {
     font-size: 3.8vh;
     display: block;
@@ -80,15 +89,20 @@ background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
     line-height: 2.6;
   }
   
+  /*on hover, div box expands*/
   .box:hover {
     flex: 1 1 50%;
   }
   
+  /*/*on hover, image inside div box also expands*/
   .box:hover > img {
     width: 100%;
     height: 100%;
   }
 
+
+
+  /*same buttons and button animamtions as home page*/
   .buttons{
     background-color: rgb(0, 0, 0);
  

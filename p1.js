@@ -1,3 +1,4 @@
+/*
 console.clear();
 
 const elApp = document.querySelector("#app");
@@ -11,7 +12,7 @@ function flipImages(firstEl, lastEl, change) {
 
   const lastRect = lastEl.getBoundingClientRect();
 
-  // INVERTs
+  // INVERT
   const deltaX = firstRect.left - lastRect.left;
   const deltaY = firstRect.top - lastRect.top;
   const deltaW = firstRect.width / lastRect.width;
@@ -69,3 +70,5 @@ elImages.forEach(figure => {
 });
 
 
+
+*/ 
